@@ -33,7 +33,7 @@ function AccessDenied() {
       display: 'flex', flexDirection: 'column', alignItems: 'center',
       justifyContent: 'center', height: '60vh', color: '#aaa', gap: 12,
     }}>
-      <div style={{ fontSize: 48 }}>🔒</div>
+      {/* <div style={{ fontSize: 48 }}>🔒</div> */}
       <div style={{ fontSize: 16, fontWeight: 600, color: '#555' }}>Доступ запрещён</div>
       <div style={{ fontSize: 13 }}>Эта страница доступна только администраторам</div>
     </div>
@@ -74,7 +74,7 @@ function AppInner() {
               <div style={{ fontSize: 12 }}>
                 <div style={{ fontWeight: 500, color: '#1a1a1a' }}>{currentUser.email}</div>
                 <div style={{ color: '#aaa', fontSize: 11 }}>
-                  {isAdmin ? '👑 Администратор' : currentUser.roles.join(', ')}
+                  {isAdmin ? 'Администратор' : currentUser.roles.join(', ')}
                 </div>
               </div>
             </div>
