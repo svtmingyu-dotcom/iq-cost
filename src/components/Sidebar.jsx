@@ -5,24 +5,24 @@ const NAV = [
   {
     section: 'Рабочее пространство',
     items: [
-      { key: 'projects',  label: 'Проекты',     icon: '📁' },
-      { key: 'users',     label: 'Участники',   icon: '👥', adminOnly: true },
+      { key: 'projects',  label: 'Проекты' },
+      { key: 'users',     label: 'Участники', adminOnly: true },
     ],
   },
   {
     section: 'Реестры',
     items: [
-      { key: 'customers',      label: 'Заказчики',      icon: '🏢' },
-      { key: 'employees',      label: 'Сотрудники',     icon: '🪪' },
-      { key: 'contractors',    label: 'Исполнители',    icon: '🤝' },
-      { key: 'subcontractors', label: 'Субподрядчики',  icon: '💼' },
-      { key: 'equipment',      label: 'Оборудование',   icon: '🖥' },
+      { key: 'customers',      label: 'Заказчики' },
+      { key: 'employees',      label: 'Сотрудники' },
+      { key: 'contractors',    label: 'Исполнители' },
+      { key: 'subcontractors', label: 'Субподрядчики' },
+      { key: 'equipment',      label: 'Оборудование' },
     ],
   },
   {
     section: 'Система',
     items: [
-      { key: 'settings', label: 'Настройки', icon: '⚙️', adminOnly: true },
+      { key: 'settings', label: 'Настройки', adminOnly: true },
     ],
   },
 ];
@@ -50,9 +50,7 @@ export default function Sidebar({ page, onNav }) {
               >
                 <span className="nav-icon">{item.icon}</span>
                 {item.label}
-                {locked && (
-                  <span style={{ marginLeft: 'auto', fontSize: 11, color: '#ccc' }}>🔒</span>
-                )}
+
               </div>
             );
           })}
