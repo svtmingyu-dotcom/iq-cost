@@ -115,15 +115,15 @@ export default function LoginPage() {
           <div style={{ fontWeight: 600, color: '#555', marginBottom: 8 }}>Демо-аккаунты:</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-              <span>👑 Администратор</span>
+              <span>Администратор</span>
               <span style={{ fontFamily: 'monospace' }}>admin@ics.ru / admin123</span>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-              <span>📊 Менеджер</span>
+              <span>Менеджер</span>
               <span style={{ fontFamily: 'monospace' }}>manager@ics.ru / manager123</span>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-              <span>👤 Кадровик</span>
+              <span>Кадровик</span>
               <span style={{ fontFamily: 'monospace' }}>hr@ics.ru / hr123</span>
             </div>
           </div>
