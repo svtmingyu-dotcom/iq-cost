@@ -49,7 +49,7 @@ export default function ContractorsPage() {
               </tr>
             </thead>
             <tbody>
-              {contractors.length === 0 && <tr><td colSpan={7}><div className="empty-state"><div className="icon">🤝</div><p>Нет исполнителей</p></div></td></tr>}
+              {contractors.length === 0 && <tr><td colSpan={7}><div className="empty-state"><p>Нет исполнителей</p></div></td></tr>}
               {contractors.map((c) => {
                 const withTax = c.rate * (1 + c.taxRate / 100);
                 return (
