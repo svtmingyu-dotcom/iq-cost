@@ -178,10 +178,10 @@ export default function ProjectEditPage({ projectId, onBack }) {
               {project.customerId && (
                 <div style={{ marginTop: 16, display: 'flex', gap: 8, flexWrap: 'wrap' }}>
                   <button className="btn btn-sm" onClick={() => alert('Формирование КП — в разработке')}>
-                    📄 Коммерческое предложение
+                    Коммерческое предложение
                   </button>
                   <button className="btn btn-sm" onClick={() => alert('Формирование НМА — в разработке')}>
-                    📊 Стоимость НМА
+                    Стоимость НМА
                   </button>
                 </div>
               )}
